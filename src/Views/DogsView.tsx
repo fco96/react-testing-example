@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { DogCard } from "../Components/DogCard/DogCard";
 import { getDogs, getDog } from "../Services/Dogs.service";
 
-const INITIAL_DOGS = 3;
+export const INITIAL_DOGS = 3;
 
 export const DogsView = () => {
   const [dogs, setDogs] = useState<React.ReactElement[]>([]);
